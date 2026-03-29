@@ -5,3 +5,5 @@ langchain
 langchain-community
 typing-extensions
 langsmith
+openai
+langchain-openai
