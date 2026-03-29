@@ -3,9 +3,6 @@ env/
 project_1.env/
 .env
 
-# Data
-servicenow_incidents.csv
-*.csv
 
 # Python Cache
 __pycache__/
