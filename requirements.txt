@@ -1,0 +1,7 @@
+ipykernel
+streamlit
+pandas
+langchain
+langchain-community
+typing-extensions
+langsmith
