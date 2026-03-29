@@ -13,13 +13,13 @@ def load_data():
     # Only load the columns we actually need to save RAM
     columns_to_keep = ['number', 'category', 'subcategory', 'u_symptom', 'priority', 'closed_code']
     try:
-        return pd.read_csv("dataset\servicenow_incidents_5000.csv", usecols=columns_to_keep)
+        return pd.read_csv("dataset/servicenow_incidents_5000.csv", usecols=columns_to_keep)
     except FileNotFoundError:
         st.error("Could not find 'servicenow_incidents_5000.csv'. Please ensure it's in the same folder.")
         st.stop()
     except ValueError:
         # Fallback in case the mock data columns don't perfectly match
-        return pd.read_csv("dataset\servicenow_incidents_5000.csv")
+        return pd.read_csv("dataset/servicenow_incidents_5000.csv")
 
 df = load_data()
 
